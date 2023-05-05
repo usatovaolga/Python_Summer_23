@@ -5,4 +5,7 @@ while True:
     if zp == 0: break
     zpS+=zp
     counter+=1
-print(f"Средняя зарплата сотрудников = {zpS/counter}")
+if zp==0:
+    print(f"Окончание ввода")
+else:
+    print(f"Средняя зарплата сотрудников = {zpS/counter}")
