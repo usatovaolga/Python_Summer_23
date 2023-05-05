@@ -5,7 +5,6 @@ mlen=0
 mlst=[]
 for i in lst:
     if len(i)>mlen: mlen=len(i)
-    s=i
 for i in lst:
     if len(i)==mlen: mlst.append(i)
 print(f"Самое длинное первое слово - {mlst[0]}")
