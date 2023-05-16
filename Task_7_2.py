@@ -10,5 +10,5 @@ def code(string, n):
             y.append(t)
         else:
             y.append(i)
-    print(f"Зашифрованая строка- {''.join(y)}")
+    print(f"Зашифрованная строка- {''.join(y)}")
 code(str1,n)
