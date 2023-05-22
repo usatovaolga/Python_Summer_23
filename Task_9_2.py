@@ -13,8 +13,8 @@ for i,v in enumerate(list(s)):
 for k,v in k3.items():
     for i,v in enumerate(list(k)):
         if v in dg:
-            k2.append(i)
-    k3[k]=k2
+            k3[k].append(i)
+    #k3[k]=k2
     k2=[]
 for m,l in k3.items():
     if l==x:
