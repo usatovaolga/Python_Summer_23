@@ -11,3 +11,5 @@ def p(n):
 posl=p(int(input('Введите число ограничения->')))
 for b in posl:
     print(b,end=' ')
+
+
