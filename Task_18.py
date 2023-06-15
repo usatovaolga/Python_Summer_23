@@ -2,6 +2,9 @@
 class Teacher:
     def __init__(self):
         self.work = 0
+    #####
+    def task(self):
+        s=
     def  teach_sets(self, lesson, tasks, *pupil):
         for i in pupil:
             i.record(lesson,tasks)
@@ -18,8 +21,10 @@ class Teacher:
         #return tt
 
 class Pupil:
+    #pupil_list = []
     def __init__(self,name):
         self.name =name
+        #Pupil.pupil_list.append(self)
         self.notebook = {}
     def record(self,lesson, tasks):
         self.notebook[lesson]=tasks
@@ -46,10 +51,19 @@ class Pupil:
 
 ZimnevM = Teacher()
 olga = Pupil('Ольга')
-vera = Pupil('Вера')
-danil = Pupil('Данил')
-ZimnevM.teach_sets(1, 3, olga, vera, danil) #учитель задает домашку, на 1 уроке 3 задания для таких-то учеников, ученик записывает в свою тетрадь
-ZimnevM.teach_sets(2, 1, olga, vera, danil)
+q =int(input("Вы учитель(1) или ученик(2), напишите цифру: "))
+if q==1:
+    qq = int(input("Выберите действие 1-задать задание, 2-проверить задание, напишите цифру: "))
+    match qq:
+        case 1:
+            ZimnevM.teach_sets(int(input()), int(input()), input())
+
+
+        case 2:
+
+
+ZimnevM.teach_sets(1, 3, olga) #учитель задает домашку, на 1 уроке 3 задания для таких-то учеников, ученик записывает в свою тетрадь
+
 #print(olga.notebook) #смотрим что ученик записал в тетрадь
 olga.solve(1, 'Решено') #ученик решает дз по заданному уроку
 #olga.solve(2, 'Не решено')
