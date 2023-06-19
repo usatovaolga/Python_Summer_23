@@ -48,7 +48,7 @@ class Admin:
             for k,v in q.items():
                 if k==place:
                     for p in v:
-                        if i == p[0]:
+                        if i == p[0].lower():
                             t=(place,p[0],p[1],date_now)
                             itod_order.append(t)
         return itod_order
@@ -73,7 +73,7 @@ class Admin:
         print(f"         Вы выбрали {sel}")
         self.menu(sel)
         s = input("Чем хотите себя порадовать?")
-        return self.check(sel,s)
+        return self.check(sel,s.lower())
 
 
 
