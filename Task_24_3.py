@@ -6,6 +6,6 @@ def skobka(s):
         if t==-1: return False
         elif i=='(': t+=1
         else: t-=1
-    if t==1: return False
+    if t != 0: return False
     else: return True
 print(skobka(sinp))
