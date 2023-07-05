@@ -11,3 +11,10 @@ def ttt(m,n1,n2,t):#1 (m,0,7,1) #2 (m,1,6,2) #3 (m,2,5,3) #4 (m,3,6,4) #5 (m,4,5
 y=ttt(m,0,n,1)
 for i in range(n):
    print(*y[i])
+
+# def sq(n):
+#     for i in range(n):
+#         for j in range(n):
+#             print(min(i,j,n-1-i,n-1-j)+1,end=' ')
+#         print()
+# sq(5)
