@@ -9,3 +9,15 @@ def ss(s,n):#n4 i'y'
         else: return ss(i,n+1)
 
 print(ss(s,n))
+
+####
+def nel(lst):
+    count=0
+    for i in lst:
+        if type(i)==list:
+            count+=nel(i)+1
+        else:
+            count +=1
+    return count
+
+print(nel([1,2,[3,4]]))
