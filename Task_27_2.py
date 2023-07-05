@@ -38,6 +38,8 @@ class Item:
     def __getattribute__(self, attr):
         if attr=='name':
             return object.__getattribute__(self,attr).titel()
+        elif attr=='price':
+            return 2*object.__getattribute__(self,attr)
         else:
             return object.__getattribute__(self,attr)
 
